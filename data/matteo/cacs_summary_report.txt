@@ -1,0 +1,51 @@
+CACS RESULTS SUMMARY REPORT
+==================================================
+Generated: 2025-09-18 15:37:21
+
+SYSTEM PARAMETERS:
+  Hilbert space dimension: 20
+  Gain rate γ: 0.01 Hz
+  Loss rate Γ: 0.2 Hz
+  Evolution time: 10.0 s
+
+ENERGY CONSTRAINTS TESTED:
+  ⟨n⟩ ≤ 3.0:
+    Final QFI: 19.998666 Hz⁻¹
+    Final ⟨n⟩: 3.000
+    QFI improvement: +10.753101
+    Iterations: 76
+    Max violation: 0.00e+00
+    Converged: False
+
+  ⟨n⟩ ≤ 8.0:
+    Final QFI: 22.665602 Hz⁻¹
+    Final ⟨n⟩: 7.999
+    QFI improvement: +12.045462
+    Iterations: 76
+    Max violation: 0.00e+00
+    Converged: False
+
+  ⟨n⟩ ≤ 13.0:
+    Final QFI: 23.016520 Hz⁻¹
+    Final ⟨n⟩: 8.960
+    QFI improvement: +14.355686
+    Iterations: 76
+    Max violation: 0.00e+00
+    Converged: False
+
+BENCHMARK COMPARISONS:
+  Constraint ⟨n⟩ ≤ 3.0 (final ⟨n⟩=3.00):
+    CACS:     19.998666 Hz⁻¹
+    Coherent: 20.006162 Hz⁻¹ (ratio: 0.9996)
+    TMSV:     22.051521 Hz⁻¹ (ratio: 0.9069)
+
+  Constraint ⟨n⟩ ≤ 8.0 (final ⟨n⟩=8.00):
+    CACS:     22.665602 Hz⁻¹
+    Coherent: 22.751543 Hz⁻¹ (ratio: 0.9962)
+    TMSV:     25.596339 Hz⁻¹ (ratio: 0.8855)
+
+  Constraint ⟨n⟩ ≤ 13.0 (final ⟨n⟩=8.96):
+    CACS:     23.016520 Hz⁻¹
+    Coherent: 23.278927 Hz⁻¹ (ratio: 0.9887)
+    TMSV:     26.236075 Hz⁻¹ (ratio: 0.8773)
+

@@ -1,0 +1,13 @@
+{
+  "timestamp": "2025-10-08T10:38:10.983380",
+  "description": "CACS short times analysis: optimization at different evolution times",
+  "algorithm": "CACS_short_times",
+  "method": "Constrained ACS optimization at multiple evolution times with QFI vs time analysis",
+  "system_parameters": {
+    "N_levels": 20,
+    "gamma": 0.01,
+    "Gamma": 0.2,
+    "parameter_estimated": "sqrt_gamma"
+  },
+  "algorithm_parameters": {
+    "optimization_times": 

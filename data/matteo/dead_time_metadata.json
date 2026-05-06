@@ -1,0 +1,17 @@
+{
+  "description": "Dead time analysis: optimal interrogation time vs dead time for upper bound QFI",
+  "nbar_fixed": 20.0,
+  "T_total": 1000.0,
+  "t_max_qfi": 9.509418837675351,
+  "max_qfi_value": 33.43114327783724,
+  "single_shot_qfi": 33.43114327783724,
+  "max_enhancement": 1629.9737496258567,
+  "max_enhancement_tau": 0.01,
+  "parameters": {
+    "gamma": 0.01,
+    "Gamma": 0.2,
+    "qfi_thermal_ss": 22.160664819944603,
+    "t_max_dt": 100.0,
+    "n_times_dt": 500.0
+  }
+}

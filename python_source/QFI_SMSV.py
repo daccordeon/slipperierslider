@@ -1,0 +1,37 @@
+import numpy as np
+
+def QFI_SMSV(g, G, t, r):
+    """ Quantum Fisher Information for Single Mode Squeezed Vacuum (SMSV) state in a lossy channel with gain.
+    Args:
+        g (float): Gain rate.
+        G (float): Loss rate.
+        t (float): Time.
+        r (float): Squeezing parameter.
+    Returns:
+        float: Quantum Fisher Information.
+    """
+    aux0=((np.exp(((4.*r)+((g+G)*t))))*((G**2)-(g**2)))+(2.*((np.exp((2.*(r+(g*t)))))*((g**2)+(G**2))));
+    aux1=((np.exp(((4.*r)+(2.*(g*t)))))*((g**2)-(G**2)))+(((np.exp(((g+G)*t)))*((G**2)-(g**2)))+aux0);
+    aux2=(-2.*((np.exp(((2.*r)+((g+G)*t))))*(((g+G)**2))))+(((np.exp((2.*(g*t))))*((g**2)-(G**2)))+aux1);
+    aux3=-2.*((np.exp(((4.*r)+(2.*(g*t)))))*((g-G)*((((g**2)*t)-((G**2)*t))-G)));
+    aux4=-2.*((np.exp(((2.*r)+((g+G)*t))))*((g+G)*(((4.*G)+((G**2)*t))-((g**2)*t))));
+    aux5=(np.exp((2.*(r+(g*t)))))*((((G**3.)*t)+(((G**2)*(1.-(g*t)))+(G*(g+((g**2)*t)))))-((g**3.)*t));
+    aux6=((np.exp(((g+G)*t)))*((G-g)*((G*(2.+(G*t)))-((g**2)*t))))+((np.exp(((4.*r)+((g+G)*t))))*((G-g)*((G*(2.+(G*t)))-((g**2)*t))));
+    aux7=(-2.*((np.exp((2.*(g*t))))*((g-G)*((((g**2)*t)-((G**2)*t))-G))))+(aux3+(aux4+((4.*aux5)+aux6)));
+    aux8=((((np.exp((2.*(r+(G*t)))))*(((g+G)**2)))+aux2)**-3.)*((((4.*((np.exp((2.*(r+(G*t)))))*(G*(g+G))))+aux7)**2));
+    aux9=((np.exp(((4.*r)+((g+G)*t))))*((G**2)-(g**2)))+(2.*((np.exp((2.*(r+(g*t)))))*((g**2)+(G**2))));
+    aux10=((np.exp(((4.*r)+(2.*(g*t)))))*((g**2)-(G**2)))+(((np.exp(((g+G)*t)))*((G**2)-(g**2)))+aux9);
+    aux11=(-2.*((np.exp(((2.*r)+((g+G)*t))))*(((g+G)**2))))+(((np.exp((2.*(g*t))))*((g**2)-(G**2)))+aux10);
+    aux12=(np.exp((4.*(r+(G*t)))))*(((G-g)**4.)*((((np.exp((2.*(r+(G*t)))))*(((g+G)**2)))+aux11)**-2.));
+    aux13=(0.5*(((np.exp((-r)))+(np.exp(r)))*g))+(-0.5*(((np.exp(r))-(np.exp((-r))))*G));
+    aux14=((np.exp(((2.*r)+((g-G)*t))))*((((G-g)**2))*t))+((np.exp(((g-G)*t)))*(((g**2)*t)-(G*(2.+(G*t)))));
+    aux15=((g+(G+(-2.*((np.exp((r+((g-G)*t))))*aux13))))**-2.)*((((2.*G)+aux14)**2));
+    aux16=(0.5*(((np.exp((-r)))+(np.exp(r)))*g))+(0.5*(((np.exp(r))-(np.exp((-r))))*G));
+    aux17=(np.exp(((g-G)*t)))*(((np.exp((2.*r)))*((G*(2.+(G*t)))-((g**2)*t)))-((((G-g)**2))*t));
+    aux18=((((np.exp((2.*r)))*(g+G))+(-2.*((np.exp((r+((g-G)*t))))*aux16)))**-2.)*((((-2.*((np.exp((2.*r)))*G))+aux17)**2));
+    aux19=((np.exp(((4.*r)+((g+G)*t))))*((G**2)-(g**2)))+(2.*((np.exp((2.*(r+(g*t)))))*((g**2)+(G**2))));
+    aux20=((np.exp(((4.*r)+(2.*(g*t)))))*((g**2)-(G**2)))+(((np.exp(((g+G)*t)))*((G**2)-(g**2)))+aux19);
+    aux21=(-2.*((np.exp(((2.*r)+((g+G)*t))))*(((g+G)**2))))+(((np.exp((2.*(g*t))))*((g**2)-(G**2)))+aux20);
+    aux22=((np.exp((2.*(r+(G*t)))))*(((G-g)**2)))/(((np.exp((2.*(r+(G*t)))))*(((g+G)**2)))+aux21);
+    output=((2.*((np.exp((2.*(r+(G*t)))))*(g*aux8)))/(1.-aux12))+((2.*(g*(((G-g)**-2.)*(aux15+aux18))))/(1.+aux22));
+    return output

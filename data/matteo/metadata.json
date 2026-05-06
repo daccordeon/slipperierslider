@@ -1,0 +1,49 @@
+{
+  "timestamp": "2025-09-09T14:33:01.949049",
+  "description": "QFI analysis for various quantum states under gain/loss dynamics",
+  "parameters": {
+    "N_levels": 50,
+    "N_two_mode": 8,
+    "gamma": 0.01,
+    "Gamma": 0.2,
+    "alpha": 2.0,
+    "n_fock_values": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "squeeze_r": 0.8,
+    "cat_alpha": 2.0,
+    "gkp_delta": 0.2,
+    "r_tmsv": 0.8,
+    "n_noon": 2,
+    "t_max": 40.0,
+    "n_times": 2000,
+    "early_time_index": 150
+  },
+  "theoretical_values": {
+    "n_thermal_ss": 0.05263157894736842,
+    "qfi_thermal_ss": 22.160664819944603,
+    "dn_dgamma": 5.54016620498615,
+    "dn_dsqrt_gamma": 1.10803324099723
+  },
+  "states": {
+    "single_mode": [
+      "vacuum",
+      "fock_1",
+      "fock_2",
+      "fock_3",
+      "fock_4",
+      "coherent",
+      "smsv",
+      "cat",
+      "gkp"
+    ],
+    "two_mode": [
+      "tmsv",
+      "noon"
+    ]
+  }
+}

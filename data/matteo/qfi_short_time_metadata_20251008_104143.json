@@ -1,0 +1,7 @@
+{
+  "experiment_name": "Quantum_Fisher_Information_Short_Time_Evolution_Analysis",
+  "description": "CACS optimization of quantum states at various evolution times with QFI analysis",
+  "timestamp": "2025-10-08T10:41:43.413246",
+  "parameters": {
+    "test_times": [
+      

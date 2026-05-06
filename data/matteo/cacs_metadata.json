@@ -1,0 +1,90 @@
+{
+  "timestamp": "2025-09-18T15:37:21.410823",
+  "description": "CACS (Constrained Alternating Convex Search) results for quantum Fisher information optimization",
+  "algorithm": "CACS",
+  "method": "Superoperator-based ACS with SDP constraints",
+  "system_parameters": {
+    "N_levels": 20,
+    "gamma": 0.01,
+    "Gamma": 0.2,
+    "t_evolution": 10.0,
+    "parameter_estimated": "sqrt_gamma"
+  },
+  "algorithm_parameters": {
+    "energy_constraints": [
+      3.0,
+      8.0,
+      13.0
+    ],
+    "num_constraints_tested": 3,
+    "max_iterations_per_constraint": 75,
+    "tolerance": 1e-10,
+    "sdp_tolerance": 1e-08
+  },
+  "initial_state": {
+    "type": "random_pure_state",
+    "seed": 12345,
+    "energy_focusing": "adaptive_to_constraint",
+    "description": "Random pure states with energy focusing when constraint violated"
+  },
+  "results_summary": {
+    "constraint_3.0": {
+      "final_qfi": 19.998666407485043,
+      "final_avg_n": 2.9997976905910515,
+      "initial_qfi": 9.245565796433015,
+      "initial_avg_n": 2.0606816032757704,
+      "qfi_improvement": 10.753100611052028,
+      "energy_change": 0.9391160873152811,
+      "iterations_used": 76,
+      "converged": false,
+      "max_constraint_violation": 0.0,
+      "energy_constraint": 3.0
+    },
+    "constraint_8.0": {
+      "final_qfi": 22.665602359453292,
+      "final_avg_n": 7.999417786923433,
+      "initial_qfi": 10.620140038087474,
+      "initial_avg_n": 6.420107313947945,
+      "qfi_improvement": 12.045462321365818,
+      "energy_change": 1.5793104729754885,
+      "iterations_used": 76,
+      "converged": false,
+      "max_constraint_violation": 0.0,
+      "energy_constraint": 8.0
+    },
+    "constraint_13.0": {
+      "final_qfi": 23.0165195225362,
+      "final_avg_n": 8.959837556725802,
+      "initial_qfi": 8.660833974721728,
+      "initial_avg_n": 9.291741928308067,
+      "qfi_improvement": 14.355685547814472,
+      "energy_change": -0.33190437158226516,
+      "iterations_used": 76,
+      "converged": false,
+      "max_constraint_violation": 0.0,
+      "energy_constraint": 13.0
+    }
+  },
+  "computational_details": {
+    "superoperator_precomputation": true,
+    "sld_method": "eigendecomposition",
+    "g_operator_method": "precomputed_dual_channel",
+    "constraint_solver": "SDP_multiple_solvers",
+    "sdp_solvers_tried": [
+      "CLARABEL",
+      "SCS",
+      "CVXOPT"
+    ]
+  },
+  "benchmarks_computed": [
+    "coherent_states",
+    "tmsv_states",
+    "upper_bound_bc_tms"
+  ],
+  "files_saved": {
+    "metadata": "cacs_metadata.json",
+    "convergence_data": "cacs_convergence_data.npz",
+    "final_states": "cacs_final_states.npz",
+    "benchmark_curves": "cacs_benchmark_curves.npz"
+  }
+}

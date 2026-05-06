@@ -1,0 +1,21 @@
+E^((1 + n)*t*\[CapitalGamma])*Sqrt[E^(n*t*(\[Gamma]1 + \[Gamma]2))*
+   ((E^(t*\[CapitalGamma])*\[CapitalGamma] - E^(t*\[Gamma]1)*\[Gamma]1)/
+     ((\[CapitalGamma] - \[Gamma]1)*(\[CapitalGamma] - \[Gamma]2)))^
+    (-1 - 2*n)*(E^(t*\[CapitalGamma])*\[CapitalGamma] - 
+     E^(t*\[Gamma]2)*\[Gamma]2)^(-1 - 2*n)]*
+ (1 - Sqrt[((E^(t*\[CapitalGamma]) - E^(t*\[Gamma]1))*
+      (E^(t*\[CapitalGamma]) - E^(t*\[Gamma]2))*\[Gamma]1*\[Gamma]2)/
+     ((E^(t*\[CapitalGamma])*\[CapitalGamma] - E^(t*\[Gamma]1)*\[Gamma]1)*
+      (E^(t*\[CapitalGamma])*\[CapitalGamma] - E^(t*\[Gamma]2)*\[Gamma]2))])^
+  (-1 - n)*
+ (1 - (\[CapitalGamma]*Sqrt[((E^(t*\[CapitalGamma]) - E^(t*\[Gamma]1))*
+        (E^(t*\[CapitalGamma]) - E^(t*\[Gamma]2))*
+        (E^(t*\[CapitalGamma])*\[CapitalGamma] - E^(t*\[Gamma]1)*\[Gamma]1)*
+        (E^(t*\[CapitalGamma])*\[CapitalGamma] - E^(t*\[Gamma]2)*\[Gamma]2))/
+       (E^(t*(\[Gamma]1 + \[Gamma]2))*(\[CapitalGamma] - \[Gamma]1)^2*
+        (\[CapitalGamma] - \[Gamma]2)^2)]*
+     (-1 + Sqrt[((E^(t*\[CapitalGamma]) - E^(t*\[Gamma]1))*
+         (E^(t*\[CapitalGamma]) - E^(t*\[Gamma]2))*\[Gamma]1*\[Gamma]2)/
+        ((E^(t*\[CapitalGamma])*\[CapitalGamma] - E^(t*\[Gamma]1)*\[Gamma]1)*
+         (E^(t*\[CapitalGamma])*\[CapitalGamma] - E^(t*\[Gamma]2)*
+           \[Gamma]2))]))/E^(t*\[CapitalGamma]))^n

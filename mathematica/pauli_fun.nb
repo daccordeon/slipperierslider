@@ -1,0 +1,122 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 14.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3617,        114]
+NotebookOptionsPosition[      2705,         90]
+NotebookOutlinePosition[      3136,        107]
+CellTagsIndexPosition[      3093,        104]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"x", "=", 
+   RowBox[{"(", GridBox[{
+      {"0", "1"},
+      {"1", "0"}
+     }], ")"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"y", "=", 
+   RowBox[{"(", GridBox[{
+      {"0", 
+       RowBox[{"-", "I"}]},
+      {"I", "0"}
+     }], ")"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"z", "=", 
+   RowBox[{"(", GridBox[{
+      {"1", "0"},
+      {"0", 
+       RowBox[{"-", "1"}]}
+     }], ")"}]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.9425201266894283`*^9, 3.942520150494766*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"0a6a4fa1-02a6-47e7-91c7-66cf1b55e915"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"ip", "[", 
+   RowBox[{"x_", ",", "y_"}], "]"}], ":=", 
+  RowBox[{"Tr", "[", 
+   RowBox[{
+    RowBox[{"x", "\[ConjugateTranspose]"}], ".", "y"}], 
+   "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"norm", "[", "x_", "]"}], ":=", 
+  RowBox[{"ip", "[", 
+   RowBox[{"x", ",", "x"}], "]"}], 
+  RowBox[{"(*", 
+   RowBox[{"2", " ", "norm", " ", "squared"}], "*)"}]}]}], "Input",
+ CellChangeTimes->{{3.942520170310485*^9, 3.942520214984036*^9}},
+ CellLabel->"In[7]:=",ExpressionUUID->"888cf779-00a2-4fe6-8683-cc00a1243bc8"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ip", "[", 
+  RowBox[{"x", ",", "z"}], "]"}]], "Input",
+ CellChangeTimes->{{3.942520186008294*^9, 3.9425201869746647`*^9}, {
+  3.9425202177536*^9, 3.9425202188700323`*^9}},
+ CellLabel->"In[9]:=",ExpressionUUID->"d38ac364-6463-45f9-a093-28f3578d1dca"],
+
+Cell[BoxData["0"], "Output",
+ CellChangeTimes->{3.942520187408824*^9, 3.942520219218276*^9},
+ CellLabel->"Out[9]=",ExpressionUUID->"50a4b549-c68a-47eb-ade0-557c4aa511c9"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ip", "[", 
+  RowBox[{
+   RowBox[{"z", "-", "x"}], ",", 
+   RowBox[{"z", "-", "y"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.94252022248603*^9, 3.9425202497432013`*^9}},
+ CellLabel->"In[12]:=",ExpressionUUID->"81f5a6d8-3c67-4987-95dc-c28228082abf"],
+
+Cell[BoxData["2"], "Output",
+ CellChangeTimes->{{3.94252022299269*^9, 3.942520250071104*^9}},
+ CellLabel->"Out[12]=",ExpressionUUID->"b23f9138-c237-486d-a82b-b8f0d9e3c0ac"]
+}, Open  ]]
+},
+WindowSize->{1383, 765},
+WindowMargins->{{-2.25, Automatic}, {Automatic, -22.5}},
+Magnification:>1.2 Inherited,
+FrontEndVersion->"14.0 for Linux x86 (64-bit) (December 12, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"72d3efe1-bcbc-4bb2-b2dc-4ebb4f46c05e"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 616, 22, 139, "Input",ExpressionUUID->"0a6a4fa1-02a6-47e7-91c7-66cf1b55e915"],
+Cell[1177, 44, 557, 15, 61, "Input",ExpressionUUID->"888cf779-00a2-4fe6-8683-cc00a1243bc8"],
+Cell[CellGroupData[{
+Cell[1759, 63, 273, 5, 35, "Input",ExpressionUUID->"d38ac364-6463-45f9-a093-28f3578d1dca"],
+Cell[2035, 70, 170, 2, 40, "Output",ExpressionUUID->"50a4b549-c68a-47eb-ade0-557c4aa511c9"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2242, 77, 272, 6, 35, "Input",ExpressionUUID->"81f5a6d8-3c67-4987-95dc-c28228082abf"],
+Cell[2517, 85, 172, 2, 40, "Output",ExpressionUUID->"b23f9138-c237-486d-a82b-b8f0d9e3c0ac"]
+}, Open  ]]
+}
+]
+*)
+

@@ -1,0 +1,178 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 14.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5608,        170]
+NotebookOptionsPosition[      5022,        152]
+NotebookOutlinePosition[      5430,        168]
+CellTagsIndexPosition[      5387,        165]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     FractionBox["2", 
+      RowBox[{"1", "+", 
+       SuperscriptBox["\[Sigma]", "2"]}]], ",", 
+     FractionBox[
+      RowBox[{"2", 
+       SuperscriptBox["\[Sigma]", "2"]}], 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{
+         FractionBox["1", "2"], "+", 
+         SuperscriptBox["\[Sigma]", "2"]}], ")"}], "2"]], ",", 
+     FractionBox[
+      FractionBox["2", 
+       RowBox[{"1", "+", 
+        SuperscriptBox["\[Sigma]", "2"]}]], 
+      FractionBox[
+       RowBox[{"2", 
+        SuperscriptBox["\[Sigma]", "2"]}], 
+       SuperscriptBox[
+        RowBox[{"(", 
+         RowBox[{
+          FractionBox["1", "2"], "+", 
+          SuperscriptBox["\[Sigma]", "2"]}], ")"}], "2"]]], ",", 
+     RowBox[{"Round", "[", 
+      FractionBox[
+       FractionBox["2", 
+        RowBox[{"1", "+", 
+         SuperscriptBox["\[Sigma]", "2"]}]], 
+       FractionBox[
+        RowBox[{"2", 
+         SuperscriptBox["\[Sigma]", "2"]}], 
+        SuperscriptBox[
+         RowBox[{"(", 
+          RowBox[{
+           FractionBox["1", "2"], "+", 
+           SuperscriptBox["\[Sigma]", "2"]}], ")"}], "2"]]], "]"}]}], "}"}], "/.", 
+   RowBox[{"\[Sigma]", "->", 
+    RowBox[{"{", 
+     RowBox[{
+      FractionBox["1", 
+       RowBox[{"Sqrt", "[", "2", "]"}]], ",", 
+      FractionBox["1", 
+       RowBox[{"10", 
+        RowBox[{"Sqrt", "[", "2", "]"}]}]], ",", 
+      FractionBox["1", 
+       RowBox[{"100", 
+        RowBox[{"Sqrt", "[", "2", "]"}]}]], ",", 
+      FractionBox["1", 
+       RowBox[{"1000", 
+        RowBox[{"Sqrt", "[", "2", "]"}]}]], ",", 
+      FractionBox["1", 
+       RowBox[{"10000", 
+        RowBox[{"Sqrt", "[", "2", "]"}]}]]}], "}"}]}]}], "//", 
+  "TableForm"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"%", "//", "N"}], "//", "TableForm"}]}], "Input",
+ CellChangeTimes->{{3.933952215947803*^9, 3.9339522886001463`*^9}, {
+  3.9339523303245077`*^9, 3.9339523333645573`*^9}, {3.933952378610051*^9, 
+  3.9339524123036118`*^9}},
+ CellLabel->"In[17]:=",ExpressionUUID->"5691e8a5-a461-4f38-8ab6-abac10fc7df8"],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {
+     FractionBox["4", "3"], 
+     FractionBox["400", "201"], 
+     FractionBox["40000", "20001"], 
+     FractionBox["4000000", "2000001"], 
+     FractionBox["400000000", "200000001"]},
+    {"1", 
+     FractionBox["400", "10201"], 
+     FractionBox["40000", "100020001"], 
+     FractionBox["4000000", "1000002000001"], 
+     FractionBox["400000000", "10000000200000001"]},
+    {
+     FractionBox["4", "3"], 
+     FractionBox["10201", "201"], 
+     FractionBox["100020001", "20001"], 
+     FractionBox["1000002000001", "2000001"], 
+     FractionBox["10000000200000001", "200000001"]},
+    {"1", "51", "5001", "500001", "50000001"}
+   },
+   GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+   GridBoxSpacings->{"Columns" -> {
+       Offset[0.27999999999999997`], {
+        Offset[2.0999999999999996`]}, 
+       Offset[0.27999999999999997`]}, "Rows" -> {
+       Offset[0.2], {
+        Offset[0.4]}, 
+       Offset[0.2]}}],
+  Function[BoxForm`e$, 
+   TableForm[BoxForm`e$]]]], "Output",
+ CellChangeTimes->{{3.93395226422738*^9, 3.9339522891126842`*^9}, 
+   3.933952333942822*^9, {3.9339523867917747`*^9, 3.933952412827277*^9}},
+ CellLabel->
+  "Out[17]//TableForm=",ExpressionUUID->"bb09addb-dcd3-42b5-aabc-\
+58e2762f9f7a"],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {"1.3333333333333333`", "1.9900497512437811`", "1.99990000499975`", 
+     "1.9999990000005`", "1.99999999`"},
+    {"1.`", "0.039211841976276834`", "0.0003999200119984002`", 
+     "3.999992000012`*^-6", "3.9999999200000014`*^-8"},
+    {"1.3333333333333333`", "50.75124378109453`", "5000.750012499375`", 
+     "500000.750000125`", "5.000000074999999`*^7"},
+    {"1.`", "51.`", "5001.`", "500001.`", "5.0000001`*^7"}
+   },
+   GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+   GridBoxSpacings->{"Columns" -> {
+       Offset[0.27999999999999997`], {
+        Offset[2.0999999999999996`]}, 
+       Offset[0.27999999999999997`]}, "Rows" -> {
+       Offset[0.2], {
+        Offset[0.4]}, 
+       Offset[0.2]}}],
+  Function[BoxForm`e$, 
+   TableForm[BoxForm`e$]]]], "Output",
+ CellChangeTimes->{{3.93395226422738*^9, 3.9339522891126842`*^9}, 
+   3.933952333942822*^9, {3.9339523867917747`*^9, 3.933952412835331*^9}},
+ CellLabel->
+  "Out[18]//TableForm=",ExpressionUUID->"85998fcf-fd96-41d7-9dfc-\
+3fd78aa27b9d"]
+}, Open  ]]
+},
+WindowSize->{689.25, 765},
+WindowMargins->{{-2.25, Automatic}, {Automatic, -22.5}},
+FrontEndVersion->"14.0 for Linux x86 (64-bit) (December 12, 2023)",
+StyleDefinitions->"ReverseColor.nb",
+ExpressionUUID->"04d579e8-b09d-429d-ba34-d24448801eb9"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 2091, 64, 164, "Input",ExpressionUUID->"5691e8a5-a461-4f38-8ab6-abac10fc7df8"],
+Cell[2674, 88, 1273, 35, 117, "Output",ExpressionUUID->"bb09addb-dcd3-42b5-aabc-58e2762f9f7a"],
+Cell[3950, 125, 1056, 24, 99, "Output",ExpressionUUID->"85998fcf-fd96-41d7-9dfc-3fd78aa27b9d"]
+}, Open  ]]
+}
+]
+*)
+

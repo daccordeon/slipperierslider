@@ -1,0 +1,24 @@
+{
+  "timestamp": "2025-09-10T10:34:51.115461",
+  "description": "Single-mode QFI analysis for various quantum states under gain/loss dynamics",
+  "parameters": {
+    "N_levels": 50,
+    "gamma": 0.01,
+    "t_max": 40.0,
+    "n_times": 2000,
+    "early_time_index": 150,
+    "squeeze_r": 0.8,
+    "gkp_delta": 0.2
+  },
+  "states": [
+    "vacuum",
+    "fock_1",
+    "fock_2",
+    "fock_3",
+    "fock_4",
+    "coherent",
+    "smsv",
+    "cat",
+    "gkp"
+  ]
+}

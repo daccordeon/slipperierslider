@@ -1,0 +1,19 @@
+{
+  "description": "High-energy GKP state QFI analysis with delta=0.05 in N=100 Hilbert space",
+  "delta_high": 0.05,
+  "N_high": 100,
+  "avg_n_high": 50.17036404765928,
+  "max_qfi_high": 22.248880119445886,
+  "max_time": 1.8009004502251125,
+  "qfi_thermal_ss": 22.160664819944603,
+  "ratio_vs_thermal": 1.0039807153899953,
+  "exceeds_thermal": true,
+  "parameters": {
+    "gamma": 0.01,
+    "Gamma": 0.2,
+    "N_high": 100,
+    "t_max": 40.0,
+    "n_times": 2000,
+    "delta_high": 0.05
+  }
+}

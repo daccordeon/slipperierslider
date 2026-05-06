@@ -1,0 +1,24 @@
+{
+  "description": "GKP state QFI analysis with different delta parameters",
+  "delta_values": [
+    0.1,
+    0.2,
+    0.3,
+    0.4,
+    0.5
+  ],
+  "avg_photons": {
+    "delta_0.1": 19.3259840031364,
+    "delta_0.2": 11.050993316075063,
+    "delta_0.3": 5.051434403651957,
+    "delta_0.4": 2.441796728540389,
+    "delta_0.5": 1.0624357069811041
+  },
+  "parameters": {
+    "gamma": 0.01,
+    "Gamma": 0.2,
+    "N_levels": 50,
+    "t_max": 40.0,
+    "n_times": 2000
+  }
+}

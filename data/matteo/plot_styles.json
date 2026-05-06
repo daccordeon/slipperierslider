@@ -1,0 +1,57 @@
+{
+  "vacuum": {
+    "color": "#1f77b4",
+    "linestyle": "-",
+    "marker": "o"
+  },
+  "fock_1": {
+    "color": "#ff7f0e",
+    "linestyle": "-",
+    "marker": "s"
+  },
+  "fock_2": {
+    "color": "#2ca02c",
+    "linestyle": "-",
+    "marker": "^"
+  },
+  "fock_3": {
+    "color": "#d62728",
+    "linestyle": "-",
+    "marker": "v"
+  },
+  "fock_4": {
+    "color": "#9467bd",
+    "linestyle": "-",
+    "marker": "D"
+  },
+  "coherent": {
+    "color": "#17becf",
+    "linestyle": "--",
+    "marker": "*"
+  },
+  "smsv": {
+    "color": "#bcbd22",
+    "linestyle": "-.",
+    "marker": "+"
+  },
+  "cat": {
+    "color": "#8c564b",
+    "linestyle": "-",
+    "marker": "p"
+  },
+  "gkp": {
+    "color": "#e377c2",
+    "linestyle": "-",
+    "marker": "h"
+  },
+  "tmsv": {
+    "color": "#ff1493",
+    "linestyle": "-",
+    "marker": "X"
+  },
+  "noon": {
+    "color": "#00ff7f",
+    "linestyle": "-",
+    "marker": "d"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "timestamp": "2025-10-08T10:21:44.684051",
+  "description": "CACS dense times analysis: optimization at densely sampled evolution times",
+  "algorithm": "CACS_dense_times",
+  "method": "Constrained ACS optimization at dense time grid with QFI vs time analysis",
+  "system_parameters": {
+    "N_levels": 20,
+    "gamma": 0.01,
+    "Gamma": 0.2,
+    "parameter_estimated": "sqrt_gamma"
+  },
+  "algorithm_parameters": {
+    "optimization_times": 

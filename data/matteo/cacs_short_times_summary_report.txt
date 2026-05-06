@@ -1,0 +1,71 @@
+CACS SHORT TIMES ANALYSIS SUMMARY REPORT
+============================================================
+Generated: 2025-10-07 16:46:17
+
+SYSTEM PARAMETERS:
+  Hilbert space dimension: 20
+  Gain rate γ: 0.01 Hz
+  Loss rate Γ: 0.2 Hz
+  Energy constraint: ⟨n⟩ ≤ 8.0
+
+OPTIMIZATION TIMES TESTED:
+  t = 2s:
+    Final QFI: 13.134735 Hz⁻¹
+    Final ⟨n⟩: 8.000
+    QFI improvement: +3.702919
+    vs Coherent: 1.7473× (✓)
+    vs TMSV: 0.7257× (✗)
+    Efficiency: 72.6%
+    Iterations: 51
+    Converged: False
+
+  t = 4s:
+    Final QFI: 12.692362 Hz⁻¹
+    Final ⟨n⟩: 8.000
+    QFI improvement: +5.521490
+    vs Coherent: 0.9365× (✗)
+    vs TMSV: 0.5753× (✗)
+    Efficiency: 57.5%
+    Iterations: 51
+    Converged: False
+
+  t = 6s:
+    Final QFI: 17.859918 Hz⁻¹
+    Final ⟨n⟩: 8.000
+    QFI improvement: +10.800569
+    vs Coherent: 0.9952× (✗)
+    vs TMSV: 0.7417× (✗)
+    Efficiency: 74.2%
+    Iterations: 51
+    Converged: False
+
+  t = 8s:
+    Final QFI: 20.818545 Hz⁻¹
+    Final ⟨n⟩: 8.000
+    QFI improvement: +13.053761
+    vs Coherent: 0.9958× (✗)
+    vs TMSV: 0.8281× (✗)
+    Efficiency: 82.8%
+    Iterations: 51
+    Converged: False
+
+  t = 10s:
+    Final QFI: 22.663766 Hz⁻¹
+    Final ⟨n⟩: 7.999
+    QFI improvement: +14.002932
+    vs Coherent: 0.9962× (✗)
+    vs TMSV: 0.8854× (✗)
+    Efficiency: 88.5%
+    Iterations: 51
+    Converged: False
+
+BEST IMPROVEMENTS:
+  vs Coherent: 1.7473× at t = 2s
+  vs TMSV: 0.8854× at t = 10s
+
+ANALYSIS INSIGHTS:
+  1. Coherent states significantly beaten: True
+  2. TMSV states significantly beaten: False
+  3. QFI vs time evolution computed for each optimal state
+  4. Energy constraint satisfied in all cases
+  5. Same initial random state used for consistency
